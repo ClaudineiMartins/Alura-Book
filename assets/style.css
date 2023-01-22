@@ -1,0 +1,214 @@
+:root {
+    --cor-de-fundo:#EBECEE;
+    --cor-de-fundo-itens: #FFFFFF;
+    --gradiente: linear-gradient(90deg,#002F52,#326589);
+    --titulo_destaque: #EB9B00;
+    --cor-secundaria_azul: #002F52;
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+}
+.cabecalho {
+    background-color: var(--cor-de-fundo-itens);
+}
+
+.links__cabecalho{
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: 80px;
+   align-items: center;
+   grid-template-areas: " menu logo logo logo curtir sacola perfil";
+
+}
+.link__cabecalho{
+    text-align: center;
+    
+
+}
+.link__cabecalho-menu {
+    grid-area: menu;
+    height: 100%;
+    background:var(--gradiente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    
+}
+
+
+.link__cabecalho-logo {
+    grid-area: logo;
+    text-align: start;
+    margin-left: 10px;
+}.link__cabecalho-curtir {
+    grid-area: curtir;
+    
+}.link__cabecalho-sacola {
+    grid-area: sacola;
+}.link__cabecalho-perfil {
+    grid-area: perfil;
+}
+
+/* menu deslizante*/
+.categorias__menu {
+    display: none;
+}
+.botao__check-menu {
+    display: none;
+}
+.botao__check-menu:checked ~ .categorias__menu {
+    display: block;
+    position: absolute;
+}
+.categorias__menu {
+    width: 300px;
+    height: 344px;
+}
+.categoria {
+    padding: 1em;
+    background-color: var(--cor-de-fundo-itens);
+}
+.categoria__titulo{
+    font-weight: 700;
+    color: var(--titulo_destaque);
+    font-size: 16px 24px;
+}
+.itens__categoria{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: var(--gradiente);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+/*banner - pagina principal*/
+.banner{
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 100vw;
+    height: 215px;
+    background: var(--gradiente);
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+
+
+}
+.titulo__banner{
+    color: var(--cor-de-fundo-itens);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 32px;
+
+}
+.paragrafo__banner{
+    margin-bottom: 5px;
+    width: 316px;
+    color: var(--cor-de-fundo-itens);
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+}
+.buscador{
+    width: 85vw;
+    border-radius: 50px;
+    height: 42px;
+    border: var(--cor-de-fundo-itens) 1px solid;
+    background-color: transparent;
+    color: var(--cor-de-fundo-itens);
+    font-size: 14px;
+    text-align: center;
+
+    
+}
+.buscador::placeholder{
+    color: var(--cor-de-fundo-itens);
+    background: url("imagens/Pesquisa.svg");
+    background-repeat: no-repeat;
+    background-position: 3em ;
+
+}
+/*SESSAO LANÇAMENTOS*/
+
+.sessao__titulo{
+    color: var(--titulo_destaque);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 28px 0 10px 0;
+    background: var(--cor-de-fundo-itens);
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-areas: 
+    "titulo imagem"
+    "subtitulo imagem"
+    "texto imagem"
+    "icones botao";
+    padding: 16px;
+    margin: 20px 24px;
+    border-radius:10px ;
+    background: var(--cor-de-fundo-itens);
+    height: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-items: center;
+
+}
+.card__titulo {
+    
+    grid-area: "titulo";
+    color: var(--titulo_destaque);
+    font-weight: 700;
+    line-height: 24px;
+    
+}
+.lancamentos__card--subtitulo {
+    grid-area:subtitulo ;
+    color: var(--cor-secundaria_azul);
+    font-weight: 700;
+    font-size: 18px;
+}
+.card__Texto{
+    grid-area: texto;
+    font-size: 14px;
+    line-height: 21px;
+    
+}
+.card__icons{
+    grid-area: icones;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.card__imagem{
+    grid-area: imagem;
+    width: 188px;
+
+}
+
+.card__button {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 16px 8px 16px;
+    grid-area: botao;
+    width: 161px;
+    height: 48px;
+    background-color: var(--titulo_destaque);
+    border: none;
+    color: var(--cor-de-fundo-itens);
+    font-weight: 700;
+    font-size: 16px;
+    
+}
