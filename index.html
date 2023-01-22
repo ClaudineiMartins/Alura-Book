@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/style.css">
     <script src="scripts/main.js"></script>
    
@@ -13,12 +14,81 @@
 </head>
 <body>
     <header>
+        <div class="cabecalho">
+            <ul class="links__cabecalho">
+                
+                
+                <li class="link__cabecalho link__cabecalho-menu "><a class="menu" href="#"><label for="menu"><img src="assets/imagens/menu_black_24dp 1.png" alt="menu"></label></a></li>
+              
+                <li class="link__cabecalho link__cabecalho-logo "><a class="logo" href="#"><img src="assets/imagens/Logo.svg" alt="logo"></a></li>
+                <li class="link__cabecalho link__cabecalho-curtir "><a class="curtir" href="#"><img src="assets/imagens/Favoritos-1.svg" alt="favoritar"></a></li>
+                <li class="link__cabecalho link__cabecalho-sacola "><a class="sacola" href="#"><img src="assets/imagens/Compras.svg" alt="sacola"></a></li>
+                <li class="link__cabecalho link__cabecalho-perfil "><a class="perfil" href="#"><img src="assets/imagens/Usuário.svg" alt="perfil"></a></li>
+            </ul>
+            <menu>
+                <input class="botao__check-menu" type="checkbox" name="" id="menu">
+                <ul class="categorias__menu">
+                    <li class="categoria categoria__titulo">Categorias</li>
+                    <li class="categoria categoria__itens"><a class="itens__categoria" href="#">programação</a></li>
+                    <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Front-End</a></li>
+                    <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Infraestrutura</a></li>
+                    <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Busines</a></li>
+                    <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Design & UX</a></li>
+                </ul>
+            </menu> 
+             
 
+            
+        </div>
 
 
         
     </header>
     <main>
+        <span class="banner banner__principal">
+            <h2 class="titulo__banner">Já sabe por onde começar?</h2>
+            <p class="paragrafo__banner">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input class="buscador" type="search" placeholder="Qual será sua próxima leitura?">
+
+        </span>  
+        <section class="sessao__lancamentos">
+            <h1 class="sessao__titulo lancamentos__titulo">ÚLTIMOS LANÇAMENTOS</h1>
+            
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/imagens/ApacheKafka.png" alt="livro sobre ApacheKafka do alura book"></div>
+                    <div class="swiper-slide"><img src="assets/imagens/Liderança.png" alt="livro sobre Liderança do alura book"></div>
+                    <div class="swiper-slide"><img src="assets/imagens/Javascript.png" alt="livro sobre Javascript do alura book"></div>
+                    <div class="swiper-slide"><img src="assets/imagens/Guia Front-end.png" alt="livro sobre Guia Front-end do alura book"></div>
+                    <div class="swiper-slide"><img src="assets/imagens/Portugol.png" alt="livro sobre Portugol do alura book"></div>
+
+                </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+            
+                </div>
+            <div class="card lancamentos__card">
+                <h3 class="card__titulo lancamentos__card--titulo">Talvez você também se interesse por...</h3>
+                <img class="card__imagem lancamentos__card--imagem" src="assets/imagens/Angular-1.png" alt="logo angular">
+                <h4 class="lancamentos__card--subtitulo card__subtitulo">Angular 11 e Firebase</h4>
+                <p class="card__Texto lancamentos__card--texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <div class="card__icons lancamentos__card--icons">
+                    <img src="assets/imagens/Favoritos-1.svg" alt="favoritos">
+                    <img src="assets/imagens/Compras.svg" alt="ir para sacola">
+                </div>
+                <button class="card__button lancamentos__card--button">Saiba mais</button>
+            </div>
+        </section>
 
 
 
@@ -30,5 +100,12 @@
 
 
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerview: 3,
+            });
+    </script>
 </body>
 </html>
