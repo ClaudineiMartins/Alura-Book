@@ -147,7 +147,24 @@ body {
     text-align: center;
     padding: 28px 0 10px 0;
     background: var(--cor-de-fundo-itens);
+
 }
+
+
+.swiper-slide img {
+width: 100%;
+
+
+}
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0;
+}
+
+
 .card{
     display: grid;
     grid-template-columns: 1fr 1fr;
