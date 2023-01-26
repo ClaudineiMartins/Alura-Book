@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/style.css">
     <script src="scripts/main.js"></script>
    
@@ -53,31 +54,34 @@
         </span>  
         <section class="sessao__lancamentos">
             <h1 class="sessao__titulo lancamentos__titulo">ÚLTIMOS LANÇAMENTOS</h1>
-            
-            <!-- Slider main container -->
+                <!-- Slider main container -->
             <div class="swiper">
-            <!-- Additional required wrapper -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                 <!-- Slides -->
-                    <div class="swiper-slide"><img src="assets/imagens/ApacheKafka.png" alt="livro sobre ApacheKafka do alura book"></div>
-                    <div class="swiper-slide"><img src="assets/imagens/Liderança.png" alt="livro sobre Liderança do alura book"></div>
-                    <div class="swiper-slide"><img src="assets/imagens/Javascript.png" alt="livro sobre Javascript do alura book"></div>
-                    <div class="swiper-slide"><img src="assets/imagens/Guia Front-end.png" alt="livro sobre Guia Front-end do alura book"></div>
-                    <div class="swiper-slide"><img src="assets/imagens/Portugol.png" alt="livro sobre Portugol do alura book"></div>
+                <div class="swiper-slide"><img src="assets/imagens/ApacheKafka.png" alt="Livro da Alura books sobre:ApacheKafka"></div>
+                <div class="swiper-slide"><img src="assets/imagens/Liderança.png" alt="Livro da Alura books sobre:Liderança"></div>
+                <div class="swiper-slide"><img src="assets/imagens/Javascript.png" alt="Livro da Alura books sobre:Javascript"></div>
+                <div class="swiper-slide"><img src="assets/imagens/Portugol.png" alt="Livro da Alura books sobre:Portugol"></div>
+                <div class="swiper-slide"><img src="assets/imagens/Guia Front-end.png" alt="Livro da Alura books sobre:Guia Front-end"></div>
 
+                
+                
+                ...
                 </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                <!-- If we need pagination -->
+               
             
-                </div>
-            <div class="card lancamentos__card">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+            
+            <!-- <div class="card lancamentos__card">
                 <h3 class="card__titulo lancamentos__card--titulo">Talvez você também se interesse por...</h3>
                 <img class="card__imagem lancamentos__card--imagem" src="assets/imagens/Angular-1.png" alt="logo angular">
                 <h4 class="lancamentos__card--subtitulo card__subtitulo">Angular 11 e Firebase</h4>
@@ -87,7 +91,7 @@
                     <img src="assets/imagens/Compras.svg" alt="ir para sacola">
                 </div>
                 <button class="card__button lancamentos__card--button">Saiba mais</button>
-            </div>
+            </div> -->
         </section>
 
 
@@ -100,12 +104,24 @@
 
 
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerview: 3,
-            });
+            speed: 400,
+            spaceBetween:10,            
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+  },
+            
+
+
+            
+            
+
+    });
+
     </script>
 </body>
 </html>
