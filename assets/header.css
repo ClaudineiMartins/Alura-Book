@@ -1,0 +1,103 @@
+
+.cabecalho {
+    background-color: var(--cor-de-fundo-itens);
+}
+
+.links__cabecalho{
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: 80px;
+   align-items: center;
+   grid-template-areas: " menu logo . . curtir sacola perfil";
+
+}
+.link__cabecalho{
+    text-align: center;
+    
+
+}
+.link__cabecalho-menu {
+    grid-area: menu;
+    height: 100%;
+    background:var(--gradiente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    
+}
+
+
+.link__cabecalho-logo {
+    grid-area: logo;
+    text-align: start;
+    margin-left: 10px;
+}.link__cabecalho-curtir {
+    grid-area: curtir;
+    
+}.link__cabecalho-sacola {
+    grid-area: sacola;
+}.link__cabecalho-perfil {
+    grid-area: perfil;
+}
+
+/* menu deslizante*/
+.categorias__menu {
+    display: none;
+}
+.botao__check-menu {
+    display: none;
+}
+.botao__check-menu:checked ~ .categorias__menu {
+    display: block;
+    position: absolute;
+}
+.categorias__menu {
+    width: 300px;
+    height: 344px;
+}
+.categoria {
+    padding: 1em;
+    background-color: var(--cor-de-fundo-itens);
+}
+.categoria__titulo{
+    font-weight: 700;
+    color: var(--titulo_destaque);
+    font-size: 16px 24px;
+}
+.itens__categoria{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: var(--gradiente);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: black; */
+}
+
+@media screen and (min-width: 1024px) {
+    .links__cabecalho{
+        grid-template-areas: "logoAlura . . . curtir sacola perfil";
+    }
+    .logo{
+        display: none;
+    }
+    .logoAlura,  .logoAlura--negrito {
+        font-size: 30px;
+        font-family: var(--fonte-secundaria);
+        
+    }
+    .logoAlura {
+
+        grid-area: logoAlura;
+        
+        background-image: url("/assets/imagens/Logo.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .logoAlura--negrito {
+        font-weight: 700;
+
+    }
+
+}

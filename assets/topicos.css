@@ -1,0 +1,29 @@
+.visitadosRecentemente {
+    width: 100vw;
+    height: 295px;
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+.visitadosRecentemente h5 {
+    color: var(--cor-de-fundo-itens);
+    text-align: center;
+    font-size: 16px;
+    padding-top: 24px;
+}
+.linksRecentes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 32px 16px;
+}
+.linkRecente{
+    background: var(--titulo_destaque);
+    padding: 16px  24px;
+    
+}
+.linkRecente a {
+    font-size: 14px;
+    color: var(--cor-de-fundo-itens);
+    text-decoration: none;
+    font-weight: 700;
+}

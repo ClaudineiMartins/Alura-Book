@@ -1,0 +1,93 @@
+.sessao__titulo{
+    color: var(--titulo_destaque);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 28px 0 10px 0;
+    background: var(--cor-de-fundo-itens);
+
+}
+
+
+.swiper-slide img {
+width: 100%;
+
+
+}
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto) ;
+    grid-template-areas: 
+    "titulo imagem"
+    "subtitulo imagem"
+    "texto imagem"
+    "icones botao";
+    padding: 23px 16px;
+    margin: 20px 24px;
+    border-radius:10px ;
+    background: var(--cor-de-fundo-itens);
+    height: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: initial;
+    justify-items: start;
+    gap: 8px;
+    
+}
+.card__titulo {
+    
+    grid-area: "titulo";
+    color: var(--titulo_destaque);
+    font-weight: 700;
+    line-height: 24px;
+    
+}
+.lancamentos__card--subtitulo {
+    grid-area:subtitulo ;
+    color: var(--cor-secundaria_azul);
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+.card__Texto{
+    grid-area: texto;
+    font-size: 14px;
+    line-height: 21px;
+    
+}
+.card__icons{
+    grid-area: icones;
+    display: flex;
+    margin-left: 26px;
+    gap: 28px;
+    align-items: center;
+}
+.card__imagem{
+    
+    grid-area: imagem;
+    width: 161px;
+
+}
+
+.card__button {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 16px 8px 16px;
+    grid-area: botao;
+    width: 161px;
+    height: 48px;
+    background-color: var(--titulo_destaque);
+    border: none;
+    color: var(--cor-de-fundo-itens);
+    font-weight: 700;
+    font-size: 16px;
+    
+}
