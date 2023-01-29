@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/reset.css">
 
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="scripts/main.js"></script>
    
    
@@ -20,8 +20,8 @@
                 
                 
                 <li class="link__cabecalho link__cabecalho-menu "><a class="menu" href="#"><label for="menu"><img src="assets/imagens/menu_black_24dp 1.png" alt="menu"></label></a></li>
-              
                 <li class="link__cabecalho link__cabecalho-logo "><a class="logo" href="#"><img src="assets/imagens/Logo.svg" alt="logo"></a></li>
+                <h1 class="logoAlura"><b class="logoAlura--negrito">Alura</b>books</h1>
                 <li class="link__cabecalho link__cabecalho-curtir "><a class="curtir" href="#"><img src="assets/imagens/Favoritos-1.svg" alt="favoritar"></a></li>
                 <li class="link__cabecalho link__cabecalho-sacola "><a class="sacola" href="#"><img src="assets/imagens/Compras.svg" alt="sacola"></a></li>
                 <li class="link__cabecalho link__cabecalho-perfil "><a class="perfil" href="#"><img src="assets/imagens/Usuário.svg" alt="perfil"></a></li>
@@ -81,7 +81,7 @@
                 <div class="swiper-scrollbar"></div> -->
             </div>
             
-            <!-- <div class="card lancamentos__card">
+            <div class="card lancamentos__card">
                 <h3 class="card__titulo lancamentos__card--titulo">Talvez você também se interesse por...</h3>
                 <img class="card__imagem lancamentos__card--imagem" src="assets/imagens/Angular-1.png" alt="logo angular">
                 <h4 class="lancamentos__card--subtitulo card__subtitulo">Angular 11 e Firebase</h4>
@@ -91,16 +91,83 @@
                     <img src="assets/imagens/Compras.svg" alt="ir para sacola">
                 </div>
                 <button class="card__button lancamentos__card--button">Saiba mais</button>
-            </div> -->
+            </div>
         </section>
+        <section class="sessao__lancamentos">
+            <h1 class="sessao__titulo lancamentos__titulo">MAIS VENDIDOS</h1>
+                <!-- Slider main container -->
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/imagens/Gestão2.svg" alt="Livro da Alura books sobre:ApacheKafka"></div>
+                <div class="swiper-slide"><img src="assets/imagens/Liderança.png" alt="Livro da Alura books sobre:Liderança"></div>
+                <div class="swiper-slide"><img src="assets/imagens/MetricasAgeis.svg" alt="Livro da Alura books sobre:Javascript"></div>
+                <div class="swiper-slide"><img src="assets/imagens/Portugol.png" alt="Livro da Alura books sobre:Portugol"></div>
+                <div class="swiper-slide"><img src="assets/imagens/Guia Front-end.png" alt="Livro da Alura books sobre:Guia Front-end"></div>
 
-
+                
+                
+                ...
+                </div>
+                <!-- If we need pagination -->
+               
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+            
+            <div class="card lancamentos__card">
+                <div class="card__titulo lancamentos__card--titulo">
+                    <img src="assets/imagens/Estrelinhas.png" alt="">
+                    <h3 >Autora do Mês</h3>
+                    
+                </div>
+                <img class="card__imagem lancamentos__card--imagem" src="assets/imagens/Perfil-escritora 1.png" alt="logo angular">
+                <h4 class="lancamentos__card--subtitulo card__subtitulo">Juliana Agarikov</h4>
+                <p class="card__Texto lancamentos__card--texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                <div class="card__icons lancamentos__card--icons">
+                    <img src="assets/imagens/Favoritos-1.svg" alt="favoritos">
+                    <img src="assets/imagens/Compras.svg" alt="ir para sacola">
+                </div>
+                <button class="card__button lancamentos__card--button">Saiba mais</button>
+            </div>
+        </section>
+        <section class="visitadosRecentemente">
+            <h5>TÓPICOS VISITADOS RECENTEMENTE</h5>
+            <ul class="linksRecentes">
+                <li class="linkRecente"><a href="#">Android</a></li>
+                <li class="linkRecente"><a href="#">Marketing Digital</a></li>
+                <li class="linkRecente"><a href="#">Agile</a></li>
+                <li class="linkRecente"><a href="#">Startups</a></li>
+                <li class="linkRecente"><a href="#">HTML & CSS</a></li>
+                <li class="linkRecente"><a href="#">Python</a></li>
+                <li class="linkRecente"><a href="#">OO</a></li>
+                <li class="linkRecente"><a href="#">Java</a></li>
+            </ul>
+          
+        </section>
+        <section class="sessao_Novidades">
+            <h5 class="titulo_Footer">Fique por dentro das novidades!</h5>
+            <p class="txt_Footer">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="container_Botao">
+            <input type="email" class="botao_CadastrarEmail" placeholder="Cadastre seu e-mail"></input>
+            </div>
+        </section>
+        
 
 
     </main>
     <footer>
-        
-
+       
+        <div class="grupoAlura">
+            <a href="#">Grupo Alura</a>
+        </div>
 
 
     </footer>
@@ -109,7 +176,7 @@
         const swiper = new Swiper('.swiper', {
             speed: 400,
             spaceBetween:10,            
-            slidesPerView: 3,
+            slidesPerView: 2,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
