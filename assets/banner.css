@@ -46,3 +46,23 @@
     background-position: 3em ;
 
 }
+@media screen and (min-width:1024px) {  
+    .banner {
+        height: 330px;
+    }
+    .titulo__banner{
+        margin-top: 84px;
+        font-size: 36px;
+    }
+    .paragrafo__banner{
+        width: auto;
+    }
+    .buscador {
+        height: 56px;
+        width: 476px;
+    }
+    .buscador:focus{
+        outline: auto;
+    }
+    
+}
