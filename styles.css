@@ -13,6 +13,7 @@
 :root {
     --cinza: #858585;
     --cor-de-fundo:#EBECEE;
+    --preto:#000000;
     --cor-de-fundo-itens: #FFFFFF;
     --gradiente: linear-gradient(90deg,#002F52,#326589);
     --titulo_destaque: #EB9B00;

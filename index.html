@@ -14,20 +14,51 @@
     <title>Alura Book</title>
 </head>
 <body>
-    <header>
-        <div class="cabecalho">
-            <ul class="links__cabecalho">
-                
-                
-                <li class="link__cabecalho link__cabecalho-menu "><a class="menu" href="#"><label for="menu"><img src="assets/imagens/menu_black_24dp 1.png" alt="menu"></label></a></li>
-                <li class="link__cabecalho link__cabecalho-logo "><a class="logo" href="#"><img src="assets/imagens/Logo.svg" alt="logo"></a></li>
-                <h1 class="logoAlura"><b class="logoAlura--negrito">Alura</b>books</h1>
-                <li class="link__cabecalho link__cabecalho-curtir "><a class="curtir" href="#"><img src="assets/imagens/Favoritos-1.svg" alt="favoritar"></a></li>
-                <li class="link__cabecalho link__cabecalho-sacola "><a class="sacola" href="#"><img src="assets/imagens/Compras.svg" alt="sacola"></a></li>
-                <li class="link__cabecalho link__cabecalho-perfil "><a class="perfil" href="#"><img src="assets/imagens/Usuário.svg" alt="perfil"></a></li>
+    <header class="cabecalho">
+            <ul class="cabecalho__conteudo"> 
+                <div class="containers__header container__header-left">
+                    <li class="link__cabecalho link__cabecalho-menu ">
+                            <label for="menu-hamburguer">
+                                <img src="assets/imagens/menu_black_24dp 1.png" alt="menu">
+                            </label>
+                    </li>
+                    <li class="link__cabecalho link__cabecalho-logo ">
+                        <a class="logo" href="#">
+                            <img src="assets/imagens/Logo.svg" alt="logo">
+                        </a>
+                        <h1 class="logoAlura"><b class="logoAlura--negrito">Alura</b>books</h1>
+                    </li>
+                    
+                </div>
+                <div class="containers__header containers__header-center">
+                    <input id="menu-categorias" type="checkbox" class="check-menu--categorias">
+                    <label for="menu-categorias">
+                        <li class="containers__header-center--categorias">CATEGORIAS</a></li>
+                    </label>
+                    
+                        <ul class="categorias__menu2">
+                            <li class="categoria categoria__itens"><a class="itens__categoria" href="#">programação</a></li>
+                            <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Front-End</a></li>
+                            <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Infraestrutura</a></li>
+                            <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Busines</a></li>
+                            <li class="categoria categoria__itens"><a class="itens__categoria" href="#">Design & UX</a></li>
+                        </ul>
+                   
+                    <li class="containers__header-center--favoritos"><a class="header-center--links" href="#">FAVORITOS<a></li>
+                    <li class="containers__header-center--estante"><a class="header-center--links" href="#">MINHA ESTANTE<a></li>
+
+
+
+                    
+                </div>
+                <div class="containers__header container__header-right">
+                    <li class="link__cabecalho link__cabecalho-curtir "><a class="curtir" href="#"><img src="assets/imagens/Favoritos-1.svg" alt="favoritar"></a></li>
+                    <li class="link__cabecalho link__cabecalho-sacola "><a class="sacola" href="#"><img src="assets/imagens/Compras.svg" alt="sacola"></a></li>
+                    <li class="link__cabecalho link__cabecalho-perfil "><a class="perfil" href="#"><img src="assets/imagens/Usuário.svg" alt="perfil"></a></li>
+                </div>
             </ul>
             <menu>
-                <input class="botao__check-menu" type="checkbox" name="" id="menu">
+                <input class="botao__check-menu" type="checkbox" name="" id="menu-hamburguer">
                 <ul class="categorias__menu">
                     <li class="categoria categoria__titulo">Categorias</li>
                     <li class="categoria categoria__itens"><a class="itens__categoria" href="#">programação</a></li>
@@ -40,7 +71,6 @@
              
 
             
-        </div>
 
 
         
