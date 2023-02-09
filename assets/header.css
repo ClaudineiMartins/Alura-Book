@@ -104,11 +104,16 @@
     }
     .containers__header-center {
         display: flex;
+        justify-content: space-evenly;
+        padding-left: 100px;
     }
     .header-center--links{
-        padding-left: 20px;
+        padding-left: 32px;
         text-decoration: none;
         color: var(--preto);
+    }
+    .containers__header-center--categorias{
+        padding-left: 15px;
     }
     .container__header-right{
         width: 200px;
@@ -133,9 +138,7 @@
     .categorias__menu2 {
         display: none;
         position: absolute;
-        top: 80px;
-        width: 300px;
-        height: 344px;
+        width: auto;
         
     }
     
@@ -144,6 +147,7 @@
         display:block;
 
     }
+   
     
     /* .check-menu--categorias:checked ~ .categorias__menu2{
         display: block;
