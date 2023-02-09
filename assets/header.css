@@ -3,12 +3,11 @@
     background-color: var(--cor-de-fundo-itens);
 }
 
-.links__cabecalho{
-   display: grid;
-   grid-template-columns: repeat(7, 1fr);
-   grid-template-rows: 80px;
-   align-items: center;
-   grid-template-areas: " menu logo . . curtir sacola perfil";
+.cabecalho__conteudo{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 .link__cabecalho{
@@ -16,8 +15,12 @@
     
 
 }
+.containers__header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
 .link__cabecalho-menu {
-    grid-area: menu;
     height: 100%;
     background:var(--gradiente);
     display: flex;
@@ -29,16 +32,15 @@
 
 
 .link__cabecalho-logo {
-    grid-area: logo;
-    text-align: start;
     margin-left: 10px;
-}.link__cabecalho-curtir {
-    grid-area: curtir;
-    
-}.link__cabecalho-sacola {
-    grid-area: sacola;
-}.link__cabecalho-perfil {
-    grid-area: perfil;
+    display: flex;
+}
+.logoAlura{
+
+    display: none;
+}
+.containers__header-center {
+    display: none;
 }
 
 /* menu deslizante*/
@@ -76,28 +78,78 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .links__cabecalho{
-        grid-template-areas: "logoAlura . . . curtir sacola perfil";
+    .cabecalho__conteudo{
+        padding-right: 80px;
     }
-    .logo{
-        display: none;
+    
+    .link__cabecalho-logo {
+        padding-left: 48px;
     }
+    .logoAlura {
+        padding-left: 5px;
+        align-self:flex-end;
+        display: block;
+    }
+   
+    
     .logoAlura,  .logoAlura--negrito {
         font-size: 30px;
         font-family: var(--fonte-secundaria);
         
     }
-    .logoAlura {
-
-        grid-area: logoAlura;
-        
-        background-image: url("/assets/imagens/Logo.svg");
-        background-repeat: no-repeat;
-        background-position: left;
-    }
+   
     .logoAlura--negrito {
         font-weight: 700;
 
     }
+    .containers__header-center {
+        display: flex;
+    }
+    .header-center--links{
+        padding-left: 20px;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container__header-right{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .link__cabecalho-curtir{
+        visibility: hidden;
+        width: 0px;
+    }
+    .link__cabecalho-menu {
+        display: none;
+    }
+    .opcoes__botao-categoria {
+        display: block;
+        position: absolute;
+    }
+    .check-menu--categorias{
+        display: none;
+    }
+   
+    .categorias__menu2 {
+        display: none;
+        position: absolute;
+        top: 80px;
+        width: 300px;
+        height: 344px;
+        
+    }
+    
+    
+    .check-menu--categorias:checked ~ .categorias__menu2 {
+        display:block;
 
+    }
+    
+    /* .check-menu--categorias:checked ~ .categorias__menu2{
+        display: block;
+        position: absolute;
+        top: 80px;
+
+    }*/
+    
 }
