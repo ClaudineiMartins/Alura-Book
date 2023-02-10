@@ -27,3 +27,22 @@
     text-decoration: none;
     font-weight: 700;
 }
+@media screen and (min-width: 1024px) {
+    .visitadosRecentemente h5{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 36px;
+
+    }
+
+    /* .linksRecentes{
+        width: 600px;
+        margin: 0 auto;
+    } */
+    .linkRecente {
+        padding: 24px 32px;
+    }
+    .linkRecente a {
+        font-size: 24px;
+    }
+}
