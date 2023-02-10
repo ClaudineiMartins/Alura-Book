@@ -75,6 +75,7 @@ width: 100%;
     
     grid-area: imagem;
     width: 161px;
+    justify-self: end;
 
 }
 
@@ -89,10 +90,31 @@ width: 100%;
     color: var(--cor-de-fundo-itens);
     font-weight: 700;
     font-size: 16px;
+    justify-self: end;
     
 }
 @media screen and (min-width: 1024px){
-    .lancamentos__titulo{
+    .sessao__titulo{
         font-size: 26px;
+        padding: 57px 0px 16px 0px;
+
     }
+    
+    .swiper{
+        width: 725px;
+        height: 338px;
+    }
+    .swiper-slide img {
+        width: 192px;
+        height: 266px;
+
+    }
+    .card {
+        grid-template-columns: auto auto;
+        width: 588px;
+        height: 266px;
+        margin: 0px auto 48px;
+
+    }
+    
 }
