@@ -39,3 +39,13 @@ h5.titulo_Footer{
     font-size: 16px;
 
 }
+@media screen and (min-width: 1024px){
+    .sessao_Novidades{
+        padding: 0px 149px 0px ;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        align-items: end;
+        justify-content: center;
+    }
+}
