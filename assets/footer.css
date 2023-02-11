@@ -13,3 +13,53 @@ div.grupoAlura a{
     line-height: 24px;
     
 }
+.lista__footer {
+    display: none;
+}
+@media screen and (min-width: 1024px){
+    footer {
+        height: 513px;
+
+    }
+    div.grupoAlura{
+        padding-top: 56px;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .grupoAlura--wordmark {
+        font-size: 24px;
+    }
+
+    .footer--1024px{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .lista__footer{
+        display: block;
+    }
+    .lista__footer-link a {
+        display: flex;
+        font-size: 14px;
+        margin-top: 16px;
+        align-items: center;
+        color: var(--cinza-escuro);
+        text-decoration: none;
+      }
+      
+      .lista__footer-link img {
+        margin-right: 10px;
+        /* align-self: center; */
+      }
+      .lista__footer p{
+        color: var(--cinza);
+        font-size: 14px;
+        padding-bottom: 25px;
+      }
+
+}
+    
+
+  
+  
