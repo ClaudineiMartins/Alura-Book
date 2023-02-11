@@ -15,7 +15,7 @@ h5.titulo_Footer{
     line-height: 27px;
 }
 .txt_Footer {
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 24px;
@@ -41,11 +41,27 @@ h5.titulo_Footer{
 }
 @media screen and (min-width: 1024px){
     .sessao_Novidades{
-        padding: 0px 149px 0px ;
+        padding: 30px 149px 54px ;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        align-items: end;
+        grid-template-areas: 
+        "titulo botao"
+        "paragrafo botao";
         justify-content: center;
+        
+    }
+    h5.titulo_Footer{
+        grid-area: titulo;
+        font-size: 24px;
+    }
+    .txt_Footer{
+        grid-area: paragrafo;
+    }
+    .container_Botao{
+        width: 327px;
+        height: 44px;
+        grid-area: botao;
+        align-self: center;
     }
 }
