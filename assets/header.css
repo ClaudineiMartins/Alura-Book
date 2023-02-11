@@ -105,7 +105,7 @@
     .containers__header-center {
         display: flex;
         justify-content: space-evenly;
-        padding-left: 100px;
+        padding-left: 80px;
     }
     .header-center--links{
         padding-left: 32px;
