@@ -21,8 +21,9 @@
     align-items: center;
 }
 .link__cabecalho-menu {
+    width: 48px;
     height: 100%;
-    background:var(--gradiente);
+    /* background:var(--gradiente); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,27 +55,42 @@
     display: block;
     position: absolute;
 }
-.categorias__menu {
+
+/* .categorias__menu {
     width: 300px;
     height: 344px;
-}
+} */
 .categoria {
-    padding: 1em;
     background-color: var(--cor-de-fundo-itens);
 }
 .categoria__titulo{
+    padding: 1em;
     font-weight: 700;
     color: var(--titulo_destaque);
     font-size: 16px 24px;
 }
+.categoria__itens:hover{
+    background: var(--gradiente);
+    cursor: pointer;
+    
+}
 .itens__categoria{
+    display: block;
+    width: 300px;
+    padding: 1em;
     text-decoration: none;
     text-transform: uppercase;
     background-image: var(--gradiente);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: black; */
+}
+.itens__categoria:hover{
+    -webkit-text-fill-color: white;
+
+}
+.link__cabecalho a p {
+    display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -113,16 +129,24 @@
         color: var(--preto);
     }
     .containers__header-center--categorias{
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+        height: 80px;
         padding-left: 15px;
+    }
+    .containers__header-center--categorias:hover{
+        cursor: pointer;
     }
     .container__header-right{
         width: 200px;
         display: flex;
+
         justify-content: space-between;
     }
     .link__cabecalho-curtir{
-        visibility: hidden;
-        width: 0px;
+        display: none;
+        
     }
     .link__cabecalho-menu {
         display: none;
@@ -149,11 +173,36 @@
     }
    
     
-    /* .check-menu--categorias:checked ~ .categorias__menu2{
-        display: block;
-        position: absolute;
-        top: 80px;
-
-    }*/
     
+}
+@media screen and (min-width: 1728px){
+    .link__cabecalho-logo {
+        padding: 0;
+        margin: 0;
+    }
+    .cabecalho__conteudo {
+        padding-left: 80px;
+    }
+    
+    .containers__header-center{
+        width: 897px;
+        justify-content: start;
+        padding-left: 0;
+    }
+    .container__header-right{
+        width: 375px;
+    }
+    .link__cabecalho a p {
+        display: block;
+    }
+    
+    .link__cabecalho a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+  
+
 }
