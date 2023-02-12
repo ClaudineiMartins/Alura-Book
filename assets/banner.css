@@ -66,3 +66,8 @@
     }
     
 }
+@media screen and (min-width: 1728px){
+    .buscador {
+        width: 586px;
+    }
+}
