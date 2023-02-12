@@ -2,7 +2,6 @@ div.grupoAlura{
     display: flex;
     background:var(--cor-de-fundo);
     border-top: 1px var(--cinza) solid;
-    height: 64px;
     align-items: center;
     padding-left: 24px ;
 
@@ -17,11 +16,12 @@ div.grupoAlura a{
     display: none;
 }
 @media screen and (min-width: 1024px){
-    footer {
+    /* footer {
         height: 513px;
 
-    }
+    } */
     div.grupoAlura{
+        /* height: 513px; */
         padding-top: 56px;
         justify-content: space-between;
         align-items: start;
@@ -58,6 +58,17 @@ div.grupoAlura a{
         padding-bottom: 25px;
       }
 
+}
+@media screen and (min-width: 1728px){
+   
+    div.grupoAlura{
+        padding-left: 212px;
+    }
+    .lista__footer{
+        border-left: 1px solid var(--cinza);
+        height: 396px;
+        padding-left: 20px;
+    }
 }
     
 
