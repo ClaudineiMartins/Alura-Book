@@ -46,3 +46,9 @@
         font-size: 24px;
     }
 }
+@media screen and (min-width: 1728px){
+    .linksRecentes {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
