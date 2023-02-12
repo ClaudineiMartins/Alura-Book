@@ -118,3 +118,32 @@ width: 100%;
     }
     
 }
+@media screen and (min-width: 1728px) {
+    .sessao__titulo {
+        grid-area: titulo;
+        font-size: 32px;
+    }
+    .sessao__lancamentos {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "titulo titulo"
+        "carrossel card";
+    }
+    .swiper-pagination{
+        padding: 3em 0 1.5em 0;
+    }
+    .swiper {
+        padding-bottom: 8em;
+    }
+    .card {
+        margin-top: 5em ;
+    }
+    .card__titulo {
+        font-size: 32px;
+    }
+    .card__Texto {
+        font-size: 16px;
+    }
+}
